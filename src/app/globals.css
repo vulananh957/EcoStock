@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-anton: var(--font-anton), "sans-serif";
+  --font-montserrat: var(--font-montserrat), "sans-serif";
+}
