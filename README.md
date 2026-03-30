@@ -50,4 +50,4 @@ MIT
 
 ---
 
-> Dự án phát triển bởi EcoStock Team. Mục tiêu: Cứu thực phẩm, bảo vệ môi trường.
+> Dự án phát triển bởi ReviveX. Mục tiêu: Cứu thực phẩm, bảo vệ môi trường.
