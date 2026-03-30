@@ -231,8 +231,8 @@ export default function RegisterPage() {
           <div className="w-full md:w-7/12 p-4 sm:p-6 lg:p-8 flex flex-col relative overflow-y-auto max-h-[90vh] md:max-h-none">
             
             {/* Header */}
-            <div className="flex items-center justify-between mb-4 shrink-0 min-h-0">
-              <div className="flex items-center justify-center py-2" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)', width: '100%' }}>
+            <div className="flex items-center justify-between mb-4 shrink-0 min-h-0 w-full">
+              <div className="flex items-center" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)' }}>
                 <a href="/" tabIndex={0} aria-label="Về trang chủ">
                   <img
                     src="/img/logo-eco.jpeg"
@@ -242,15 +242,20 @@ export default function RegisterPage() {
                   />
                 </a>
               </div>
-              
-              {step === 2 && (
-                <button 
-                  onClick={() => { setStep(1); setOtpSent(false); }}
-                  className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-[#0766AD] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full"
-                >
-                  <ChevronLeft className="w-4 h-4" /> Quay lại
-                </button>
-              )}
+              <div className="flex items-center gap-2">
+                {step === 2 ? (
+                  <button 
+                    onClick={() => { setStep(1); setOtpSent(false); }}
+                    className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-[#0766AD] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full"
+                  >
+                    <ChevronLeft className="w-4 h-4" /> Quay lại
+                  </button>
+                ) : (
+                  <a href="/" className="text-sm font-bold text-[#0766AD] hover:text-[#29ADB2] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full">
+                    Quay về trang chủ
+                  </a>
+                )}
+              </div>
             </div>
 
             {/* Dynamic Content Area */}

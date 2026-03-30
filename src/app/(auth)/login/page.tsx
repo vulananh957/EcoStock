@@ -82,15 +82,22 @@ export default function LoginPage() {
             
             {/* Back to Home Link removed as requested */}
             {/* Header */}
-            <div className="flex items-center justify-center py-2 mb-12 shrink-0" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)', width: '100%' }}>
-              <a href="/" tabIndex={0} aria-label="Về trang chủ">
-                <img
-                  src="/img/logo-eco.jpeg"
-                  alt="EcoStock Logo"
-                  className="h-32 w-auto object-contain cursor-pointer"
-                  style={{ maxWidth: '400px' }}
-                />
-              </a>
+            <div className="flex items-center justify-between py-2 mb-12 shrink-0 w-full">
+              <div className="flex items-center" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)' }}>
+                <a href="/" tabIndex={0} aria-label="Về trang chủ">
+                  <img
+                    src="/img/logo-eco.jpeg"
+                    alt="EcoStock Logo"
+                    className="h-32 w-auto object-contain cursor-pointer"
+                    style={{ maxWidth: '400px' }}
+                  />
+                </a>
+              </div>
+              <div className="flex items-center">
+                <a href="/" className="text-sm font-bold text-[#0766AD] hover:text-[#29ADB2] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full">
+                  Quay về trang chủ
+                </a>
+              </div>
             </div>
 
             {/* Dynamic Content Area */}
