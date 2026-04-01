@@ -231,27 +231,27 @@ export default function RegisterPage() {
           <div className="w-full md:w-7/12 p-4 sm:p-6 lg:p-8 flex flex-col relative overflow-y-auto max-h-[90vh] md:max-h-none">
             
             {/* Header */}
-            <div className="flex items-center justify-between mb-4 shrink-0 min-h-0 w-full">
-              <div className="flex items-center" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)' }}>
+            <div className="flex items-center justify-between mb-4 shrink-0 min-h-0 w-full gap-2 sm:gap-4">
+              <div className="flex items-center min-w-0" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)' }}>
                 <a href="/" tabIndex={0} aria-label="Về trang chủ">
                   <img
                     src="/img/logo-eco.jpeg"
                     alt="EcoStock Logo"
-                    className="h-32 w-auto object-contain cursor-pointer"
-                    style={{ maxWidth: '400px' }}
+                    className="h-16 sm:h-20 md:h-32 w-auto object-contain cursor-pointer"
+                    style={{ maxWidth: 'clamp(80px, 25vw, 400px)' }}
                   />
                 </a>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center flex-shrink-0 gap-2">
                 {step === 2 ? (
                   <button 
                     onClick={() => { setStep(1); setOtpSent(false); }}
-                    className="flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-[#0766AD] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full"
+                    className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-bold text-gray-400 hover:text-[#0766AD] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-3 sm:px-4 rounded-full whitespace-nowrap"
                   >
-                    <ChevronLeft className="w-4 h-4" /> Quay lại
+                    <ChevronLeft className="w-3 sm:w-4 h-3 sm:h-4" /> Quay lại
                   </button>
                 ) : (
-                  <a href="/" className="text-sm font-bold text-[#0766AD] hover:text-[#29ADB2] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full">
+                  <a href="/" className="text-xs sm:text-sm font-bold text-[#0766AD] hover:text-[#29ADB2] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-3 sm:px-4 rounded-full whitespace-nowrap">
                     Quay về trang chủ
                   </a>
                 )}

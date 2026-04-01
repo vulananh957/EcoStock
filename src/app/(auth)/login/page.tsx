@@ -78,23 +78,23 @@ export default function LoginPage() {
           </div>
 
           {/* Right Panel - Interactive Area */}
-          <div className="w-full md:w-7/12 p-8 sm:p-12 lg:p-16 flex flex-col relative overflow-y-auto max-h-[90vh] md:max-h-none">
+          <div className="w-full md:w-7/12 p-4 sm:p-6 lg:p-16 flex flex-col relative overflow-y-auto max-h-[90vh] md:max-h-none">
             
             {/* Back to Home Link removed as requested */}
             {/* Header */}
-            <div className="flex items-center justify-between py-2 mb-12 shrink-0 w-full">
-              <div className="flex items-center" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)' }}>
+            <div className="flex items-center justify-between py-2 mb-8 sm:mb-12 shrink-0 w-full gap-2 sm:gap-4">
+              <div className="flex items-center min-w-0" style={{ fontFamily: 'var(--font-anton, system-ui, sans-serif)' }}>
                 <a href="/" tabIndex={0} aria-label="Về trang chủ">
                   <img
                     src="/img/logo-eco.jpeg"
                     alt="EcoStock Logo"
-                    className="h-32 w-auto object-contain cursor-pointer"
-                    style={{ maxWidth: '400px' }}
+                    className="h-16 sm:h-20 md:h-32 w-auto object-contain cursor-pointer"
+                    style={{ maxWidth: 'clamp(80px, 25vw, 400px)' }}
                   />
                 </a>
               </div>
-              <div className="flex items-center">
-                <a href="/" className="text-sm font-bold text-[#0766AD] hover:text-[#29ADB2] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-4 rounded-full">
+              <div className="flex items-center flex-shrink-0">
+                <a href="/" className="text-xs sm:text-sm font-bold text-[#0766AD] hover:text-[#29ADB2] transition-colors bg-gray-50 hover:bg-blue-50 py-2 px-3 sm:px-4 rounded-full whitespace-nowrap">
                   Quay về trang chủ
                 </a>
               </div>
