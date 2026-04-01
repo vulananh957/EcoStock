@@ -23,6 +23,14 @@ const montserrat = localFont({
 export const metadata: Metadata = {
   title: 'EcoStock - Giải Phóng Hàng Tồn',
   description: 'Hệ thống AI Agent tự động định giá và điều phối thực phẩm cận date.',
+  icons: {
+    icon: [
+      { url: '/favicon/favicon.ico', sizes: 'any' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: '/favicon/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
