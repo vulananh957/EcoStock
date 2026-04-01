@@ -103,7 +103,10 @@ export default function SolutionsTabs() {
 
         {/* CTA centered under the two cards */}
         <div className="mt-10 flex justify-center">
-          <button className="bg-[#29ADB2] hover:bg-[#29ADB2]/90 text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2 group">
+          <button 
+            onClick={() => router.push('/register')}
+            className="bg-[#29ADB2] hover:bg-[#29ADB2]/90 text-white px-8 py-4 rounded-full font-semibold transition-all flex items-center gap-2 group"
+          >
             {active.ctaLabel}
             <div className="bg-white text-[#29ADB2] rounded-full p-1 group-hover:translate-x-1 transition-transform">
               <ArrowRight size={18} />

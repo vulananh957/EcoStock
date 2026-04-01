@@ -36,13 +36,13 @@ export default function TermsOfServicePage() {
               </div>
               <div className="text-[#0766AD]/80 text-lg leading-relaxed space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-[#29ADB2] mt-1" />
+                  <CheckCircle2 size={24} className="text-[#29ADB2] mt-1 shrink-0" />
                   <div>EcoStock cam kết duy trì hệ thống hoạt động ổn định (Uptime 99.9%).</div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="text-[#29ADB2] mt-1" />
+                  <CheckCircle2 size={24} className="text-[#29ADB2] mt-1 shrink-0" />
                   <div>
-                    Các bản cập nhật thuật toán AI và bảo trì hệ thống sẽ được thông báo trước ít nhất 24 giờ và thực hiện vào khung giờ thấp điểm (đêm khuya)
+                    Các bản cập nhật thuật toán AI và bảo trì hệ thống sẽ được thông báo trước ít nhất 24 giờ và thực hiện vào khung giờ thấp điểm
                     để không ảnh hưởng đến việc buôn bán.
                   </div>
                 </div>
